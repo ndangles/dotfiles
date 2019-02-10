@@ -2,15 +2,15 @@
 imap jj <Esc>
 set tabstop=2
 set shiftwidth=2
+set backspace=indent,eol,start
 
-map <C-n> :NERDTreeToggle<CR>
-let g:NERDTreeNodeDelimiter = "\u00a0"
-let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
+" FORMATTING
 inoremap { {<CR>}<Esc>ko
 inoremap " ""<left>
 inoremap ' ''<left>
 inoremap ( ()<left>
 inoremap [ []<left>
+inoremap <% <%%><left><left>
 
 " VIM-PLUG SETUP
 if empty(glob('~/.vim/autoload/plug.vim'))
@@ -22,10 +22,19 @@ endif
 " PLUGINS
 call plug#begin('~/.vim/plugged')
 
-Plug 'valloric/youcompleteme'
 Plug 'scrooloose/nerdtree'
 Plug 'kien/ctrlp.vim'
 Plug 'tpope/vim-endwise'
-
+Plug 'tomasiser/vim-code-dark'
 
 call plug#end()
+
+" PLUGIN SETUP
+map <C-n> :NERDTreeToggle<CR>
+let g:NERDTreeNodeDelimiter = "\u00a0"
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
+
+" SETUP
+set syntax=on
+set background=dark
+colorscheme codedark
