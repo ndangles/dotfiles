@@ -37,4 +37,5 @@ let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 " SETUP
 set syntax=on
 set background=dark
+set number
 colorscheme codedark
