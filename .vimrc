@@ -34,6 +34,7 @@ call plug#end()
 map <C-n> :NERDTreeToggle<CR>
 let g:NERDTreeNodeDelimiter = "\u00a0"
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
+let NERDTreeQuitOnOpen=1
 
 " SETUP
 set syntax=on
