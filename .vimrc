@@ -25,6 +25,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'scrooloose/nerdtree'
 Plug 'kien/ctrlp.vim'
 Plug 'tpope/vim-endwise'
+Plug 'tpope/vim-commentary'
 Plug 'tomasiser/vim-code-dark'
 
 call plug#end()
