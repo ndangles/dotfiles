@@ -1,6 +1,6 @@
 " CUSTOM MAPPINGS
 imap jj <Esc>
-imap jw <Esc> :w<CR>
+imap jww <Esc> :w<CR>
 imap jwq <Esc> :wq<CR>
 set tabstop=2
 set shiftwidth=2
@@ -10,6 +10,7 @@ set backspace=indent,eol,start
 inoremap { {<CR>}<Esc>ko
 inoremap " ""<left>
 inoremap ' ''<left>
+inoremap ` ``<left>
 inoremap ( ()<left>
 inoremap [ []<left>
 inoremap <% <%%><left><left>
