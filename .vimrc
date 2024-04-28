@@ -5,6 +5,8 @@ imap jwq <Esc> :wq<CR>
 set tabstop=2
 set shiftwidth=2
 set backspace=indent,eol,start
+nnoremap <leader>d "_d
+vnoremap <leader>d "_d
 
 " FORMATTING
 inoremap { {<CR>}<Esc>ko
